@@ -1,0 +1,20 @@
+<header class="header headr">
+
+    <h2>CATEGORIES</h2>
+
+  </header>
+
+<div class="categories-container">
+  <% @categories.each do |category|%>
+    <%= link_to category_expenses_path(category), class: "category" do %>
+       <div class="name-category">
+          <%= image_tag(url_for(category.icon), class: "category-icon") if category.icon.attached? %>
+          <h3><%= category.name %></h3>
+       </div>
+       <p class="amount-category"><%= number_to_currency(category.expenses.sum(:amount), unit: "$") %></p>
+    <% end %>
+  <% end %>
+</ul>
+<div class="forgot">
+<%= link_to "Add new category", new_category_path, class:"new-path" %>
+</div>

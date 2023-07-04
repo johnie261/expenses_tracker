@@ -1,0 +1,24 @@
+<%= form_for(@category, html: { multipart: true }) do |f| %>
+
+<header class="header">
+    <a href="/categories">
+      <div class="arrow"><</div>
+    </a>
+
+    <h2 class="create">CREATE CATEGORIES</h2>
+
+  </header>
+
+  <div class="field">
+    <%= f.text_field :name, placeholder: 'name', class: "input" %>
+  </div>
+
+ <div class="field">
+    <%= f.file_field :icon, accept: "image/png, image/jpeg", class: "img-upload" %>
+  </div>
+
+  <div class="forgot">
+    <%= f.submit "Create Category", class: "new-path"  %>
+  </div>
+
+<% end %>
