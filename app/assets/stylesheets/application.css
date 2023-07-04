@@ -17,9 +17,12 @@
 
  @import 'font-awesome';
  @import "font-awesome-sprockets";
+ @import "@fortawesome/fontawesome-free/css/all";
+
 
  html {
-   overflow: hidden;
+   overflow-x: hidden;
+   background-color: #d3d3d3;
  }
 
  body {
@@ -76,6 +79,14 @@
     margin-bottom: 1rem;
  }
 
+ .headr {
+    justify-content: center;
+ }
+
+ .create {
+  margin-right: 1rem;
+ }
+
  .btnn {
    border: none;
    font-size: 1.2rem;
@@ -110,4 +121,53 @@
  .fogot {   
    color: #434b54;
    font-size: 1rem;
+ }
+
+ .new-path {
+  color: #fff;
+  background-color: #5fb523;
+  padding: 1rem;
+  border-radius: .5rem;
+ }
+
+ .categories-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ }
+
+ .category {
+  background-color: #fff;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  margin-left: -2rem;
+  margin-right: -2rem;
+  width: 85%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+ }
+
+ .name-category {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  color: #434b54;
+ }
+
+ .amount-category {
+  color: black;
+ }
+
+ .category-icon {
+  height: 6rem;
+  width: 6rem;
+  object-fit: cover;
+ }
+
+ .img-upload {
+  margin: 1.2rem;
+
  }
