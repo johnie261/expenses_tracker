@@ -1,0 +1,26 @@
+
+<%= form_with(model: @expense, url: category_expenses_path(@category), local: true) do |f| %>
+
+<header class="header">
+  <%= link_to "<", category_expenses_path(@category), class: "arrow" %>
+  <h2 class="create">CREATE EXPENSE</h2>
+</header>
+
+<div class="field">
+  <%= f.text_field :name, placeholder: 'name', class: "input" %>
+</div>
+
+<div class="field">
+  <%= f.number_field :amount, placeholder: 'amount', class: "input"%>
+</div>
+
+<div class="select-container">
+    <%= f.label :category_ids, "Categories" %>
+    <%= f.collection_select :category_ids, Category.all, :id, :name, {}, multiple: true, class: "select-category" %>
+  </div>
+
+  <div class="forgot">
+    <%= f.submit "Create Expense", class: "new-path" %>
+  </div>
+
+<% end %>
