@@ -1,8 +1,12 @@
 <header class="header headr">
 
-    <h2>CATEGORIES</h2>
+  <h2>CATEGORIES</h2>
 
-  </header>
+  <%= form_tag(destroy_user_session_path, method: :delete) do %>
+    <%= submit_tag "Log Out", class: "btnn" %>
+  <% end %>
+
+</header>
 
 <div class="categories-container">
   <% @categories.each do |category|%>
@@ -14,7 +18,8 @@
        <p class="amount-category"><%= number_to_currency(category.expenses.sum(:amount), unit: "$") %></p>
     <% end %>
   <% end %>
-</ul>
+</div>
+
 <div class="forgot">
 <%= link_to "Add new category", new_category_path, class:"new-path" %>
 </div>
