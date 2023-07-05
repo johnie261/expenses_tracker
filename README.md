@@ -60,11 +60,7 @@ EXpense Tracker is a website that allows users to manage personal finances. Feat
 
 > Here you can see the live demo of my project:
 
-- [Live Demo Link](https://johnie261.github.io/Concert-Web/)
-
->Here is a link to my loom video
-
-- [Loom video Link](https://www.loom.com/share/235973dffa6b41468a34ac2200289e5f)
+- [Live Demo Link](https://expense-mwm0.onrender.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
