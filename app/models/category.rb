@@ -1,10 +1,9 @@
 class Category < ApplicationRecord
-    belongs_to :user
-    has_and_belongs_to_many :expenses
+  belongs_to :user
+  has_and_belongs_to_many :expenses
 
-    has_one_attached :icon
+  has_one_attached :icon
 
-    validates :name, presence: true
-    validates :icon, presence: true
-
-  end
+  validates :name, presence: true
+  validates :icon, presence: true
+end

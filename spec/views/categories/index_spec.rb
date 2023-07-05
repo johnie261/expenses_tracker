@@ -4,9 +4,9 @@ RSpec.describe '/categories path', type: :system do
   include Warden::Test::Helpers
 
   let!(:user) { User.create(name: 'John', email: 'john@gmail.com', password: 'password') }
-  let!(:category) { Category.create(name: 'Dishes', user: user, icon: icon) }
+  let!(:category) { Category.create(name: 'Dishes', user:, icon:) }
   let!(:icon) { fixture_file_upload(Rails.root.join('spec/fixtures/files/dish.png'), 'image/png') }
-  
+
   it 'should show the user\'s categories name' do
     login_as(user)
     visit categories_path

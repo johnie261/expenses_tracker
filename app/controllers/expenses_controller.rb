@@ -1,5 +1,4 @@
 class ExpensesController < ApplicationController
-
   def index
     @category = Category.find(params[:category_id])
     @expenses = @category.expenses.order(created_at: :desc)
@@ -18,8 +17,8 @@ class ExpensesController < ApplicationController
     @expense.author = current_user
 
     if @expense.save
-      redirect_to category_expenses_path(@category), notice: "Expense added successfully"
-    
+      redirect_to category_expenses_path(@category), notice: 'Expense added successfully'
+
     else
       render :new
     end
@@ -30,5 +29,4 @@ class ExpensesController < ApplicationController
   def expense_params
     params.require(:expense).permit(:name, :amount, category_ids: [])
   end
-
 end
