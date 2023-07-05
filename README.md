@@ -54,6 +54,22 @@ EXpense Tracker is a website that allows users to manage personal finances. Feat
   
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- LIVE DEMO -->
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+> Here you can see the live demo of my project:
+
+- [Live Demo Link](https://johnie261.github.io/Concert-Web/)
+
+>Here is a link to my loom video
+
+- [Loom video Link](https://www.loom.com/share/235973dffa6b41468a34ac2200289e5f)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- GETTING STARTED -->
+
 ## 💻 Getting Started <a name="getting-started"></a>
 
 To get a local copy up and running, follow these steps.

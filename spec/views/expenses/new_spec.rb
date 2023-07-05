@@ -8,6 +8,15 @@ RSpec.describe 'Expenses', type: :feature do
     describe 'creating a new expense' do
 
       it 'creates a new expense' do
+        user = User.create(name: 'John', email: 'john@gmail.com', password: 'password')
+  
+        visit new_user_session_path
+        fill_in 'Email', with: user.email
+        fill_in 'Password', with: user.password
+        click_button 'Log in'
+  
+        expect(page).to have_current_path(categories_path)
+
         visit new_category_expense_path(category.id)
       
         within('form') do
