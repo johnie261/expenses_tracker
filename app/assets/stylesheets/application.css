@@ -15,11 +15,6 @@
 
  */
 
- @import 'font-awesome';
- @import "font-awesome-sprockets";
- @import "@fortawesome/fontawesome-free/css/all";
-
-
  html {
    overflow-x: hidden;
    background-color: #d3d3d3;
@@ -80,7 +75,12 @@
  }
 
  .headr {
-    justify-content: center;
+  padding: 0 1rem
+ }
+
+ .logout {
+  color: #fff;
+  font-size: 1.2rem;
  }
 
  .create {
@@ -169,5 +169,29 @@
 
  .img-upload {
   margin: 1.2rem;
+ }
 
+ .amount {
+  text-align: end;
+  padding-right: .7rem;
+ }
+
+ .select-container {
+  margin: .7rem;
+  display: flex;
+  flex-direction: column;
+  gap: .4rem;
+ }
+
+ .select-category {
+  font-size: .9rem;
+ }
+
+ .expense-container {
+  display: flex;
+  align-items: center;
+ }
+
+ .name {
+  text-transform: capitalize;
  }
