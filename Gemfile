@@ -7,6 +7,16 @@ gem 'devise'
 
 gem 'font-awesome-sass'
 
+gem 'cancancan'
+
+group :development, :test do
+  gem 'rails-controller-testing'
+  gem 'rspec-rails'
+end
+
+gem 'rspec-support', '3.12.1'
+
+
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.6"
 
