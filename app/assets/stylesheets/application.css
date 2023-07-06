@@ -112,6 +112,17 @@ a {
 }
 
 .forgot {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  color: #fff;
+  background-color: #5fb523;
+  display: flex;
+  justify-content: center;
+
+}
+
+.forgoty {
   display: flex;
   justify-content: center;
   margin-top: 2rem;
@@ -123,10 +134,22 @@ a {
 }
 
 .new-path {
+  border: 1px solid #fff;
+  width: 85%;
   color: #fff;
-  background-color: #5fb523;
+  margin: 1rem 0 1rem 0;
+  text-decoration: none;
   padding: 1rem;
-  border-radius: 0.5rem;
+  text-align: center;
+  font-size: 1.2rem;
+ text-transform: uppercase;
+  font-weight: bold;
+}
+
+.add {
+  background-color: #5fb523;
+  color: #fff;
+  border: 1px solid #fff:
 }
 
 .categories-container {
