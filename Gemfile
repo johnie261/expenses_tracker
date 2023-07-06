@@ -14,10 +14,6 @@ group :development, :test do
   gem 'rspec-rails'
 end
 
-group :test do
-  gem 'bullet'
-end
-
 gem 'rspec-support', '3.12.1'
 
 gem 'rubocop', '>= 1.0', '< 2.0'
