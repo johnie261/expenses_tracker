@@ -216,3 +216,9 @@ a {
 .name {
   text-transform: capitalize;
 }
+
+@media (max-width: 950px) {
+  .forgot {
+    width: 91.5%;
+  }
+}
