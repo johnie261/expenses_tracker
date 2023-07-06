@@ -1,0 +1,36 @@
+
+<header class="header">
+    <a href="/categories">
+      <div class="arrow"><</div>
+    </a>
+
+    <h2 class="create">EXPENSES</h2>
+
+</header>
+<div class="amount">
+  <p class="amount-category">Total Amount: <%= number_to_currency(@total_amount) %></p>
+</div>
+  
+<div class="categories-container">
+  <% if @expenses.any? %>
+    <% @expenses.each do |expense| %>
+      <li class="category expense-container">
+        <div class="name">
+          <%= expense.name %>
+        </div>
+        <%= number_to_currency(expense.amount) %>
+        <ul>
+          <% expense.categories.each do |category| %>
+            <li><%= category.name %></li>
+          <% end %>
+        </ul>
+      </li>
+    <% end %>
+  <% else %>
+    <p>No expenses found.</p>
+  <% end %>
+</div>
+
+  <div class="forgot">
+    <%= link_to "Add new expense", new_category_expense_path, class:"new-path" %>
+  </div>
