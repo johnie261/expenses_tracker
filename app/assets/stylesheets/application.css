@@ -21,21 +21,28 @@ html {
 }
 
 body {
-  margin: -2rem;
-  padding: 1.9rem;
+  margin: 0;
   font-family: 'Proxima Nova', sans-serif;
   color: #434b54;
 }
 
 .home {
-  height: 95vh;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
+}
+
+.content {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow-x: hidden;
 }
 
 .app_name {
   font-style: italic;
-  height: 85vh;
+  height: 75vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -62,6 +69,10 @@ body {
 .btn:hover {
   background-color: #3778c2;
   color: #fff;
+}
+
+.box-btns .btn {
+  margin: 0.5rem;
 }
 
 .header {
@@ -106,16 +117,16 @@ a {
 
 .input {
   border: 1px solid #c0c0c0;
-  width: 100%;
+  width: 85%;
+  margin: 0.5rem;
   padding: 1.2rem;
   font-size: 1rem;
+  border-radius: 0.5rem;
 }
 
 .forgot {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
   color: #fff;
+  width: 100%;
   background-color: #5fb523;
   display: flex;
   justify-content: center;
@@ -125,6 +136,10 @@ a {
   display: flex;
   justify-content: center;
   margin-top: 2rem;
+}
+
+.btttn {
+  width: 108.5%;
 }
 
 .fogot {

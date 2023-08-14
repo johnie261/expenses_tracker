@@ -1,6 +1,7 @@
 
 <%= form_with(model: @expense, url: category_expenses_path(@category), local: true) do |f| %>
-
+<div class="content">
+<div>
 <header class="header">
   <%= link_to "<", category_expenses_path(@category), class: "arrow" %>
   <h2 class="create">CREATE EXPENSE</h2>
@@ -17,10 +18,14 @@
 <div class="select-container">
     <%= f.label :category_ids, "Categories" %>
     <%= f.collection_select :category_ids, current_user.categories, :id, :name, {}, multiple: true, class: "select-category" %>
-  </div>
+</div>
+</div>
 
+<div class="btttn">
   <div class="forgot">
     <%= f.submit "Create Expense", class: "new-path add" %>
   </div>
+<div>
+</div>
 
 <% end %>
